@@ -8,6 +8,8 @@ setup(
     maintainer='Jack Wearden',
     maintainer_email='jack@jackwearden.co.uk',
     description='Simple file copy installer for certbot',
+    long_description='README.md',
+    long_description_content_type='text/markdown'
     keywords='letsencrypt certbot installer',
     url='https://github.com/NotBobTheBuilder/certbot-filecopy-installer',
     license='MIT License',
