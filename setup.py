@@ -1,6 +1,9 @@
 from setuptools import find_packages, setup
+from pathlib import Path
 
 version='0.9.0'
+this_directory = Path(__file__).parent
+long_description = (this_directory / 'README.md').read_text()
 
 setup(
     name='certbot-filecopy-installer',
@@ -8,7 +11,7 @@ setup(
     maintainer='Jack Wearden',
     maintainer_email='jack@jackwearden.co.uk',
     description='Simple file copy installer for certbot',
-    long_description='README.md',
+    long_description=long_description,
     long_description_content_type='text/markdown',
     keywords='letsencrypt certbot installer',
     url='https://github.com/NotBobTheBuilder/certbot-filecopy-installer',
